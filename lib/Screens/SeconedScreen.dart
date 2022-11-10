@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_roots/Core/Services/Routes_name.dart';
 
 class SeconedScreen extends StatefulWidget {
   static const String id ="SeconedScreen";
@@ -25,7 +26,7 @@ class _SeconedScreenState extends State<SeconedScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children:  <Widget>[
             ElevatedButton(onPressed: (){
-              Navigator.pushNamed(context, "ThirdScreen",arguments: {
+              Navigator.pushNamed(context, Routes_name.ThirdScreen,arguments: {
                 'name':'umar',
                 'age':'26'
               });

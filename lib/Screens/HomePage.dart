@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_roots/Core/Services/Routes_name.dart';
 
 class MyHomePage extends StatefulWidget {
   static const String id ="MyHomePage";
@@ -33,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children:  <Widget>[
            ElevatedButton(onPressed: (){
-             Navigator.pushNamed(context, "SeconedScreen");
+          Navigator.pushNamed(context, Routes_name.SecodScreen);
 
            }, child: const Text("Go to second screen"))
 

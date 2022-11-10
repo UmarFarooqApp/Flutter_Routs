@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_roots/Core/Services/Genrated_routes.dart';
+import 'package:flutter_roots/Core/Services/Routes_name.dart';
 import 'package:flutter_roots/Screens/SeconedScreen.dart';
 import 'package:flutter_roots/Screens/ThirdScreen.dart';
 
@@ -16,19 +18,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
       ),
-     initialRoute:MyHomePage.id ,
-     routes: {
-
-        MyHomePage.id: (context)=>MyHomePage(title: 'Flutter Demo'),
-       SeconedScreen.id:(context)=>SeconedScreen(),
-       ThirdScreen.id:(context)=>ThirdScreen(),
-     },
+     initialRoute:Routes_name.HomeScreen ,
+     // routes: {
+     //
+     //    MyHomePage.id: (context)=>MyHomePage(title: 'Flutter Demo'),
+     //   SeconedScreen.id:(context)=>SeconedScreen(),
+     //   ThirdScreen.id:(context)=>ThirdScreen(),
+     // },
      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      onGenerateRoute: Genrated_routes.genrateRoutes,
     );
   }
 }
