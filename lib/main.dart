@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
      routes: {
 
         MyHomePage.id: (context)=>MyHomePage(title: 'Flutter Demo'),
-       SeconeScreen.id:(context)=>SeconeScreen(),
+       SeconedScreen.id:(context)=>SeconedScreen(),
        ThirdScreen.id:(context)=>ThirdScreen(),
      },
      // home: const MyHomePage(title: 'Flutter Demo Home Page'),

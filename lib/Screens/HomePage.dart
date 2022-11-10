@@ -31,10 +31,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
 
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
+          children:  <Widget>[
+           ElevatedButton(onPressed: (){
+             Navigator.pushNamed(context, "SeconedScreen");
+
+           }, child: const Text("Go to second screen"))
 
           ],
         ),
